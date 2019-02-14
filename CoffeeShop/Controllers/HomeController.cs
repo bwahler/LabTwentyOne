@@ -16,14 +16,14 @@ namespace CoffeeShop.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "We make coffee we can be proud of!";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "We would be happy to answer any questions or concerns you might have!";
 
             return View();
         }
@@ -38,6 +38,9 @@ namespace CoffeeShop.Controllers
             ViewBag.Password = u.Password;
             ViewBag.Email = u.Email;
             ViewBag.PhoneNumber = u.PhoneNumber;
+            ViewBag.gender = u.gender;
+            ViewBag.BirthDate = u.BirthDate;
+            ViewBag.CoffeeType = u.CoffeeType;
             return View();
         }
     }

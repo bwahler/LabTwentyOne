@@ -11,6 +11,9 @@ namespace CoffeeShop.Models
         public string LastName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+        public string gender { get; set; }
+        public string BirthDate { get; set; }
+        public string CoffeeType { get; set; }
     }
 }
